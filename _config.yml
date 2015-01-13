@@ -1,0 +1,24 @@
+# Site settings
+title: Matteo Gildone
+email: matteo.gildone@gmail.com
+description: Senior Front-End Developer
+baseurl: "/domsmasher" # the subpath of your site, e.g. /blog/
+url: "http://localhost:4000"
+twitter_username: domsmasher
+github_username:  domsmasher
+
+# Build settings
+markdown: rdiscount
+rdiscount:
+ extensions: [smart]
+permalink: /articles/:title
+paginate: 3
+navigation:
+    - text: Home
+      url: /
+    - text: About
+      url: /about/
+    - text: Blog
+      url: /blog/
+    - text: Resume
+      url: /resume/

@@ -1,0 +1,12 @@
+<nav class="menu-top"></nav>
+<nav class="menu-side">
+	{% unless page.layout == 'front' %}
+		{% for link in site.navigation %}
+			{% assign current = nil %}
+			{% if page.url == link.url or page.layout == link.layout %}
+				{% assign current = 'current' %}
+			{% endif %}
+			<a class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}" href="{{ link.url | prepend: site.baseurl }}">{{ link.text }}</a>
+		{% endfor %}
+	{% endunless %}
+</nav>
