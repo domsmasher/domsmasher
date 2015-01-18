@@ -27,10 +27,10 @@ hr {
 .content-wrap {
     position: relative;
     z-index: 90;
-    background: url(../img/blur-evening-sun-macbook-air-170.jpg);
+    background: url(../img/blur-evening-sun-macbook-air-170.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-position: 50% 50%;
     background-size: cover;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -63,21 +63,28 @@ hr {
 }
 
 .menu-top {
+    .icon-list,
     .profile {
         display: inline-block;
         padding: 8px 10px;
         line-height: 42px;
+    }
+    .profile {
         img {
             float: left;
             margin-right: 1em;
+        }
+        span {
+            color: #b8b7ad
         }
     }
 }
 
 .icon-list {
-    padding-left: 1em;
-    display: inline-block;
     font-size: 1.25em;
+    a {
+        margin-right: 7px;
+    }
 }
 
 .menu-side {

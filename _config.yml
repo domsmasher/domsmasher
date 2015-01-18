@@ -6,6 +6,8 @@ baseurl: "/domsmasher" # the subpath of your site, e.g. /blog/
 url: "http://localhost:4000"
 twitter_username: domsmasher
 github_username:  domsmasher
+linkedin_username:  matteogildone
+instagram_username: domsmasher
 
 # Build settings
 markdown: rdiscount
