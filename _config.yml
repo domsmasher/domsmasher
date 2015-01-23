@@ -8,6 +8,7 @@ twitter_username: domsmasher
 github_username:  domsmasher
 linkedin_username:  matteogildone
 instagram_username: domsmasher
+lsi: true
 
 # Build settings
 markdown: rdiscount
@@ -20,7 +21,5 @@ navigation:
       url: /
     - text: About
       url: /about/
-    - text: Blog
-      url: /blog/
     - text: Resume
       url: /resume/

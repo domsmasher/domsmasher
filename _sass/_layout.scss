@@ -377,3 +377,24 @@ hr {
         }
     }
 }
+
+.home {
+    float: left;
+    max-width: -webkit-calc(500px - (#{$spacing-unit} * 2));
+    max-width:         calc(500px - (#{$spacing-unit} * 2));
+    @include media-query($on-laptop) {
+        float: left;
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    }
+}
+
+.sidebar {
+    float: left;
+    max-width: -webkit-calc(300px - (#{$spacing-unit} * 2));
+    max-width:         calc(300px - (#{$spacing-unit} * 2));
+    display: block;
+    @include media-query($on-laptop) {
+        display: none;
+    }
+}

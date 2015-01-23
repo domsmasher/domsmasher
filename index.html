@@ -2,7 +2,6 @@
 layout: default
 ---
 <div class="home">
-
     <ul class="post-list">
         {% for post in paginator.posts limit: 3 %}
         <li>
@@ -11,11 +10,7 @@ layout: default
             <h2>
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
-            {% if post.content contains '<!--more-->' %}
-            {{ post.content | split:'<!--more-->' | first }}
-            {% else %}
-            {{ post.content }}
-            {% endif %}
+            {{ post.excerpt }}
         </li>
         {% endfor %}
     </ul>
@@ -39,7 +34,9 @@ layout: default
         </p>
     </div>
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</div>
 
+<div class="sidebar">
     <h4>Recent Writings</h4>
     <p>From the archives of this journal:</p>
     <ul class="disc">
@@ -50,5 +47,4 @@ layout: default
     <h4>About Edward Hyde</h4>
     <p>A night owl, citizen of London, of questionable character.</p>
     <p><a href="/feed.xml">Subscribe to Feed</a></p>
-
 </div>
