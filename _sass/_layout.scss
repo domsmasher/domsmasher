@@ -417,7 +417,7 @@ h6 {
     header {
         text-align: center;
     }
-    .skills {
+    ul {
         -webkit-column-count: 3;
         -moz-column-count: 3;
         column-count: 3;
@@ -456,7 +456,7 @@ h6 {
     }
     p {
         position: absolute;
-        top: -.5em;
+        top: -.8em;
         right: 0;
         left: 0;
         letter-spacing: 1px;
