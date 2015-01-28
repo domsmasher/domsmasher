@@ -2,3 +2,6 @@ _site
 .sass-cache
 .DS_Store
 img/blur-evening-sun-macbook-air-1702.jpg
+node_modules
+uncss
+csso
