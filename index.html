@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="content-container">
+<div class="content-container col-md-8">
     <ul class="post-list">
         {% for post in paginator.posts limit: 3 %}
         <li>
@@ -16,7 +16,7 @@ layout: default
     </ul>
 </div>
 
-<div class="sidebar">
+<div class="sidebar col-md-4">
     <h3>Recent Writings</h3>
     <ul class="disc">
         {% for post in site.posts offset: 3 limit: 10 %}
@@ -28,7 +28,7 @@ layout: default
     <p><a href="/feed.xml">Subscribe to Feed</a></p>
 </div>
 
-<div class="pagination">
+<div class="pagination col-xs-12">
     <p>
         {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
